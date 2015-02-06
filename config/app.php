@@ -143,7 +143,12 @@ return [
 		'App\Providers\BusServiceProvider',
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
-		'App\Providers\RouteServiceProvider',
+    'App\Providers\RouteServiceProvider',
+
+    /*
+     *Application local config
+     */
+    'BrainSocket\BrainSocketServiceProvider',
 
 	],
 
@@ -192,6 +197,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+    'BrainSocket'     => 'BrainSocket\BrainSocketFacade',
 
 	],
 
